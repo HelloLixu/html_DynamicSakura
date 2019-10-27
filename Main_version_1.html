@@ -1,0 +1,829 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>爱上那个公寓</title>
+<embed src="bgm.mp3" hidden="true" autostart="true" loop="true">
+<style>
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bg_container{
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.img_container_welcome{
+	position: absolute;
+	top:0px;
+	right:40%;
+	padding: 0;
+}
+.img_container_love_1{
+	position: absolute;
+	top:0px;
+	right:85%;
+	padding: 0;
+}
+.font_container_1{
+	position: absolute;
+	top:50px;
+	right:1555px;
+	font-family: sans-serif;
+	font-size: 50px;
+	color:#FF0066;
+	padding: 0;
+}
+.img_container_love_2{
+	position: absolute;
+	top:0px;
+	right:65%;
+	padding: 0;
+}
+.font_container_2{
+	position: absolute;
+	top:50px;
+	right:1178px;
+	font-family: sans-serif;
+	font-size: 50px;
+	color:#CCFFFF;
+	padding: 0;
+}
+.img_container_love_3{
+	position: absolute;
+	top:0px;
+	right:20%;
+	padding: 0;
+}
+.font_container_3{
+	position: absolute;
+	top:50px;
+	right:700px;
+	font-family: sans-serif;
+	font-size: 50px;
+	color:#660099;
+	padding: 0;
+}
+.img_container_love_4{
+	position: absolute;
+	top:0px;
+	right:0%;
+	padding: 0;
+}
+.font_container_4{
+	position: absolute;
+	top:50px;
+	right:320px;
+	font-family: sans-serif;
+	font-size: 50px;
+	color:#FF66Cc;
+	padding: 0;
+}
+.font_container_5{
+	position: absolute;
+	top:300px;
+	right:1800px;
+	font-family: sans-serif;
+	font-size: 24px;
+	color:#CC9933;
+	padding: 0;
+}
+.font_container_6{
+	position: absolute;
+	top:300px;
+	right:120px;
+	font-family: sans-serif;
+	font-size: 24px;
+	color:#CC9933;
+	padding: 0;
+}
+/*人物介绍*/
+.Yifei_img{
+	position: absolute;
+	top:370px;
+	right:1100px;
+	padding: 0;
+}
+.Yifei_content{
+	position: absolute;
+	height: 254px;
+	width: 550px;
+	top:370px;
+	right:550px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Xiaoxian_img{
+	position: absolute;
+	top:650px;
+	right:550px;
+	padding: 0;
+}
+.Xiaoxian_content{
+	position: absolute;
+	height: 256px;
+	width: 550px;
+	top:650px;
+	right:840px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Meijia_img{
+	position: absolute;
+	top:935px;
+	right:1100px;
+	padding: 0;
+}
+.Meijia_content{
+	position: absolute;
+	height: 254px;
+	width: 550px;
+	top:935px;
+	right:550px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Ziqiao_img{
+	position: absolute;
+	top:1217px;
+	right:550px;
+	padding: 0;
+}
+.Ziqiao_content{
+	position: absolute;
+	height: 256px;
+	width: 550px;
+	top:1217px;
+	right:840px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Youyou_img{
+	position: absolute;
+	top:1496px;
+	right:1100px;
+	padding: 0;
+}
+.Youyou_content{
+	position: absolute;
+	height: 254px;
+	width: 550px;
+	top:1496px;
+	right:550px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Shenqi_img{
+	position: absolute;
+	top:1780px;
+	right:550px;
+	padding: 0;
+}
+.Shenqi_content{
+	position: absolute;
+	height: 256px;
+	width: 550px;
+	top:1780px;
+	right:840px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Wanyu_img{
+	position: absolute;
+	top:2061px;
+	right:1100px;
+	padding: 0;
+}
+.Wanyu_content{
+	position: absolute;
+	height: 254px;
+	width: 550px;
+	top:2061px;
+	right:550px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Zhanbo_img{
+	position: absolute;
+	top:2343px;
+	right:550px;
+	padding: 0;
+}
+.Zhanbo_content{
+	position: absolute;
+	height: 256px;
+	width: 550px;
+	top:2343px;
+	right:840px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.Wei_img{
+	position: absolute;
+	top:3200px;
+	right:1100px;
+	padding: 0;
+}
+.Wei_content{
+	position: absolute;
+	height: 254px;
+	width: 550px;
+	top:3200px;
+	right:550px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color:#330066;
+	background-color: #FF99CC;
+	padding: 0;
+}
+.box {
+	position: absolute;
+    width: 400px;
+    height: 100px;
+    text-align: center; 
+	right:870px;
+	top:3150px;
+}
+.to_top {
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #f0f;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+</style>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/fsgallery.css" rel="stylesheet" />
+
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/fs_forse.js"></script>
+</head>
+<body>
+<script>
+var RENDERER = {
+	INIT_CHERRY_BLOSSOM_COUNT : 30,
+	MAX_ADDING_INTERVAL : 10,
+	
+	init : function(){
+		this.setParameters();
+		this.reconstructMethods();
+		this.createCherries();
+		this.render();
+	},
+	setParameters : function(){
+		this.$container = $('#jsi-cherry-container');
+		this.width = this.$container.width();
+		this.height = 3500;
+		this.context = $('<canvas />').attr({width : this.width, height : this.height}).appendTo(this.$container).get(0).getContext('2d');
+		this.cherries = [];
+		this.maxAddingInterval = Math.round(this.MAX_ADDING_INTERVAL * 1000 / this.width);
+		this.addingInterval = this.maxAddingInterval;
+	},
+	reconstructMethods : function(){
+		this.render = this.render.bind(this);
+	},
+	createCherries : function(){
+		for(var i = 0, length = Math.round(this.INIT_CHERRY_BLOSSOM_COUNT * this.width / 1000); i < length; i++){
+			this.cherries.push(new CHERRY_BLOSSOM(this, true));
+		}
+	},
+	render : function(){
+		requestAnimationFrame(this.render);
+		this.context.clearRect(0, 0, this.width, this.height);
+		
+		this.cherries.sort(function(cherry1, cherry2){
+			return cherry1.z - cherry2.z;
+		});
+		for(var i = this.cherries.length - 1; i >= 0; i--){
+			if(!this.cherries[i].render(this.context)){
+				this.cherries.splice(i, 1);
+			}
+		}
+		if(--this.addingInterval == 0){
+			this.addingInterval = this.maxAddingInterval;
+			this.cherries.push(new CHERRY_BLOSSOM(this, false));
+		}
+	}
+};
+var CHERRY_BLOSSOM = function(renderer, isRandom){
+	this.renderer = renderer;
+	this.init(isRandom);
+};
+CHERRY_BLOSSOM.prototype = {
+	FOCUS_POSITION : 300,
+	FAR_LIMIT : 600,
+	MAX_RIPPLE_COUNT : 100,
+	RIPPLE_RADIUS : 100,
+	SURFACE_RATE : 0.5,
+	SINK_OFFSET : 20,
+	
+	init : function(isRandom){
+		this.x = this.getRandomValue(-this.renderer.width, this.renderer.width);
+		this.y = isRandom ? this.getRandomValue(0, this.renderer.height) : this.renderer.height * 1.5;
+		this.z = this.getRandomValue(0, this.FAR_LIMIT);
+		this.vx = this.getRandomValue(-2, 2);
+		this.vy = -2;
+		this.theta = this.getRandomValue(0, Math.PI * 2);
+		this.phi = this.getRandomValue(0, Math.PI * 2);
+		this.psi = 0;
+		this.dpsi = this.getRandomValue(Math.PI / 600, Math.PI / 300);
+		this.opacity = 0;
+		this.endTheta = false;
+		this.endPhi = false;
+		this.rippleCount = 0;
+		
+		var axis = this.getAxis(),
+			theta = this.theta + Math.ceil(-(this.y + this.renderer.height * this.SURFACE_RATE) / this.vy) * Math.PI / 500;
+		theta %= Math.PI * 2;
+		
+		this.offsetY = 40 * ((theta <= Math.PI / 2 || theta >= Math.PI * 3 / 2) ? -1 : 1);
+		this.thresholdY = this.renderer.height / 2 + this.renderer.height * this.SURFACE_RATE * axis.rate;
+		this.entityColor = this.renderer.context.createRadialGradient(0, 40, 0, 0, 40, 80);
+		this.entityColor.addColorStop(0, 'hsl(330, 70%, ' + 50 * (0.3 + axis.rate) + '%)');
+		this.entityColor.addColorStop(0.05, 'hsl(330, 40%,' + 55 * (0.3 + axis.rate) + '%)');
+		this.entityColor.addColorStop(1, 'hsl(330, 20%, ' + 70 * (0.3 + axis.rate) + '%)');
+		this.shadowColor = this.renderer.context.createRadialGradient(0, 40, 0, 0, 40, 80);
+		this.shadowColor.addColorStop(0, 'hsl(330, 40%, ' + 30 * (0.3 + axis.rate) + '%)');
+		this.shadowColor.addColorStop(0.05, 'hsl(330, 40%,' + 30 * (0.3 + axis.rate) + '%)');
+		this.shadowColor.addColorStop(1, 'hsl(330, 20%, ' + 40 * (0.3 + axis.rate) + '%)');
+	},
+	getRandomValue : function(min, max){
+		return min + (max - min) * Math.random();
+	},
+	getAxis : function(){
+		var rate = this.FOCUS_POSITION / (this.z + this.FOCUS_POSITION),
+			x = this.renderer.width / 2 + this.x * rate,
+			y = this.renderer.height / 2 - this.y * rate;
+		return {rate : rate, x : x, y : y};
+	},
+	renderCherry : function(context, axis){
+		context.beginPath();
+		context.moveTo(0, 40);
+		context.bezierCurveTo(-60, 20, -10, -60, 0, -20);
+		context.bezierCurveTo(10, -60, 60, 20, 0, 40);
+		context.fill();
+		
+		for(var i = -4; i < 4; i++){
+			context.beginPath();
+			context.moveTo(0, 40);
+			context.quadraticCurveTo(i * 12, 10, i * 4, -24 + Math.abs(i) * 2);
+			context.stroke();
+		}
+	},
+	render : function(context){
+		var axis = this.getAxis();
+		
+		if(axis.y == this.thresholdY && this.rippleCount < this.MAX_RIPPLE_COUNT){
+			context.save();
+			context.lineWidth = 2;
+			context.strokeStyle = 'hsla(0, 0%, 100%, ' + (this.MAX_RIPPLE_COUNT - this.rippleCount) / this.MAX_RIPPLE_COUNT + ')';
+			context.translate(axis.x + this.offsetY * axis.rate * (this.theta <= Math.PI ? -1 : 1), axis.y);
+			context.scale(1, 0.3);
+			context.beginPath();
+			context.arc(0, 0, this.rippleCount / this.MAX_RIPPLE_COUNT * this.RIPPLE_RADIUS * axis.rate, 0, Math.PI * 2, false);
+			context.stroke();
+			context.restore();
+			this.rippleCount++;
+		}
+		if(axis.y < this.thresholdY || (!this.endTheta || !this.endPhi)){
+			if(this.y <= 0){
+				this.opacity = Math.min(this.opacity + 0.01, 1);
+			}
+			context.save();
+			context.globalAlpha = this.opacity;
+			context.fillStyle = this.shadowColor;
+			context.strokeStyle = 'hsl(330, 30%,' + 40 * (0.3 + axis.rate) + '%)';
+			context.translate(axis.x, Math.max(axis.y, this.thresholdY + this.thresholdY - axis.y));
+			context.rotate(Math.PI - this.theta);
+			context.scale(axis.rate * -Math.sin(this.phi), axis.rate);
+			context.translate(0, this.offsetY);
+			this.renderCherry(context, axis);
+			context.restore();
+		}
+		context.save();
+		context.fillStyle = this.entityColor;
+		context.strokeStyle = 'hsl(330, 40%,' + 70 * (0.3 + axis.rate) + '%)';
+		context.translate(axis.x, axis.y + Math.abs(this.SINK_OFFSET * Math.sin(this.psi) * axis.rate));
+		context.rotate(this.theta);
+		context.scale(axis.rate * Math.sin(this.phi), axis.rate);
+		context.translate(0, this.offsetY);
+		this.renderCherry(context, axis);
+		context.restore();
+		
+		if(this.y <= -this.renderer.height / 4){
+			if(!this.endTheta){
+				for(var theta = Math.PI / 2, end = Math.PI * 3 / 2; theta <= end; theta += Math.PI){
+					if(this.theta < theta && this.theta + Math.PI / 200 > theta){
+						this.theta = theta;
+						this.endTheta = true;
+						break;
+					}
+				}
+			}
+			if(!this.endPhi){
+				for(var phi = Math.PI / 8, end = Math.PI * 7 / 8; phi <= end; phi += Math.PI * 3 / 4){
+					if(this.phi < phi && this.phi + Math.PI / 200 > phi){
+						this.phi = Math.PI / 8;
+						this.endPhi = true;
+						break;
+					}
+				}
+			}
+		}
+		if(!this.endTheta){
+			if(axis.y == this.thresholdY){
+				this.theta += Math.PI / 200 * ((this.theta < Math.PI / 2 || (this.theta >= Math.PI && this.theta < Math.PI * 3 / 2)) ? 1 : -1);
+			}else{
+				this.theta += Math.PI / 500;
+			}
+			this.theta %= Math.PI * 2;
+		}
+		if(this.endPhi){
+			if(this.rippleCount == this.MAX_RIPPLE_COUNT){
+				this.psi += this.dpsi;
+				this.psi %= Math.PI * 2;
+			}
+		}else{
+			this.phi += Math.PI / ((axis.y == this.thresholdY) ? 200 : 500);
+			this.phi %= Math.PI;
+		}
+		if(this.y <= -this.renderer.height * this.SURFACE_RATE){
+			this.x += 2;
+			this.y = -this.renderer.height * this.SURFACE_RATE;
+		}else{
+			this.x += this.vx;
+			this.y += this.vy;
+		}
+		return this.z > -this.FOCUS_POSITION && this.z < this.FAR_LIMIT && this.x < this.renderer.width * 1.5;
+	}
+};
+$(function(){
+	RENDERER.init();
+});</script>
+<div id="jsi-cherry-container" class="bg_container">
+	<div class="img_container_love_1" id="gallery">
+		<center>
+			<img src="love_1.png" alt="" width="300px">
+		</center>
+	</div>
+	<div class="font_container_1">
+		<center>
+			欢
+		</center>
+	</div>
+	<div class="img_container_love_2" id="gallery">
+		<center>
+			<img src="love_2.png" alt="" width="300px">
+		</center>
+	</div>
+	<div class="font_container_2">
+		<center>
+			迎
+		</center>
+	</div>
+	<div class="img_container_welcome" id="gallery">
+		<center>
+			<img src="head.jpg" alt="" width="400px">
+		</center>
+	</div>
+	<div class="font_container_3">
+		<center>
+			回
+		</center>
+	</div>
+	<div class="img_container_love_3" id="gallery">
+		<center>
+			<img src="love_3.png" alt="" width="300px">
+		</center>
+	</div>
+	<div class="font_container_4">
+		<center>
+			来
+		</center>
+	</div>
+	<div class="img_container_love_4" id="gallery">
+		<center>
+			<img src="love_4.png" alt="" width="300px">
+		</center>
+	</div>
+	<div class="font_container_5">
+		<center>
+			<p>
+				最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面
+			</p>
+		</center>
+	</div>
+	<div class="font_container_6">
+		<center>
+			<p>
+				最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面<br><br>最<br><br>爱<br><br>的<br><br>人<br><br>住<br><br>在<br><br>身<br><br>边<br><br>最<br><br>好<br><br>的<br><br>朋<br><br>友<br><br>在<br><br>对<br><br>面
+			</p>
+		</center>
+	</div>
+	<div class="Yifei_img">
+		<center>
+			<img src="Yifei.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Yifei_content">
+		<center>
+			<p>
+				"静若处子，动若脱兔"
+			</p>
+			<p>
+				学校空手道协会前任主席
+			</p>
+			<p style="color: gold">
+				彪悍的人生，还需要解释吗
+			</p>
+			<p>
+				奔放外向，神经大条
+			</p>
+			<p>
+				大学里的体育老师
+			</p>
+			<p>
+				换得了电灯泡，装得了操作系统，修的了马桶
+			</p>
+			<p>
+				标着“女强人”称号的她，对待朋友认认真真，对待生活充满热情
+			</p>
+		</center>
+	</div>
+	<div class="Xiaoxian_img">
+		<center>
+			<img src="Xiaoxian.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Xiaoxian_content">
+		<center>
+			<p>
+				“贱人曾”的形象深入人心
+			</p>
+			<p>
+				同时又是一个老好人
+			</p>
+			<p style="color: gold">
+				好男人就是我，我就是曾小贤
+			</p>
+			<p>
+				对旁人的请求竭力相助
+			</p>
+			<p>
+				敏感而专一
+			</p>
+			<p>
+				换不了电灯泡，装不了操作系统，修不了马桶
+			</p>
+			<p>
+				小心翼翼的保管着自己心底的秘密
+			</p>
+		</center>
+	</div>
+	<div class="Meijia_img">
+		<center>
+			<img src="Meijia.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Meijia_content">
+		<center>
+			<p>
+				小九九到现在也没有算明白
+			</p>
+			<p>
+				活泼可爱，古灵精怪
+			</p>
+			<p style="color: gold">
+				我一口盐汽水喷死你
+			</p>
+			<p>
+				但对帅哥和一切可爱的东西毫无抗拒
+			</p>
+			<p>
+				不明白脑袋里在捉摸着什么
+			</p>
+			<p>
+				鬼马小精灵一般
+			</p>
+			<p>
+				典型的宅女
+			</p>
+		</center>
+	</div>
+	<div class="Ziqiao_img">
+		<center>
+			<img src="Ziqiao.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Ziqiao_content">
+		<center>
+			<p>
+				风流倜傥的花花公子
+			</p>
+			<p>
+				被誉为爱情公寓最不可靠的人
+			</p>
+			<p style="color: gold">
+				"人生没有彩排，每一天都是现场直播"
+			</p>
+			<p>
+				没有专业特长，没有正经的工作
+			</p>
+			<p>
+				反过来看，他永远无拘无束
+			</p>
+			<p>
+				但，也会扛起责任
+			</p>
+			<p>
+				聪明伶俐，口才超于常人
+			</p>
+		</center>
+	</div>
+	<div class="Youyou_img">
+		<center>
+			<img src="Youyou.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Youyou_content">
+		<center>
+			<p>
+				百变戏痴
+			</p>
+			<p>
+				永远受不住秘密
+			</p>
+			<p style="color: gold">
+				唐氏表演法，show time
+			</p>
+			<p>
+				性格耿直
+			</p>
+			<p>
+				喜欢探讨并暴露八卦
+			</p>
+			<p>
+				最大的理想是做一个主角
+			</p>
+			<p>
+				不会死掉的那种
+			</p>
+		</center>
+	</div>
+	<div class="Shenqi_img">
+		<center>
+			<img src="Shenqi.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Shenqi_content">
+		<center>
+			<p>
+				勤奋努力，典型的工作狂，御宅男
+			</p>
+			<p>
+				独特的中文承担了多少笑点
+			</p>
+			<p style="color: gold">
+				信不信我分分钟切腹自尽
+			</p>
+			<p>
+				大男子主义
+			</p>
+			<p>
+				会憨憨的挠着头说：请多包涵
+			</p>
+			<p>
+				但若有人欺负了悠悠
+			</p>
+			<p>
+				他将变身超级赛亚人
+			</p>
+		</center>
+	</div>
+	<div class="Wanyu_img">
+		<center>
+			<img src="Wanyu.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Wanyu_content">
+		<center>
+			<p>
+				林氏银行的千金大小姐
+			</p>
+			<p>
+				追求梦想的一只小喜鹊
+			</p>
+			<p style="color: gold">
+				先来五份强暴鸡米花
+			</p>
+			<p>
+				傻子偷乞丐的钱包，被瞎子看到了
+			</p>
+			<p>
+				哑巴大吼一声，把聋子吓了一跳，
+			</p>
+			<p>
+				驼子挺身而出，瘸子飞起一脚
+			</p>
+			<p>
+				通辑犯要拉他去公安局，麻子说，看我的面子算了。
+			</p>
+		</center>
+	</div>
+	<div class="Zhanbo_img">
+		<center>
+			<img src="Zhanbo.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Zhanbo_content">
+		<center>
+			<p>
+				哈佛的高材生
+			</p>
+			<p>
+				热衷于保护地球的开拓者
+			</p>
+			<p style="color: gold">
+				上帝郑重宣布，好像停电了。
+			</p>
+			<p>
+				请问，有矿泉水吗？
+			</p>
+			<p>
+				清晨的第一缕阳光，就是麦当劳的麦香猪柳蛋汉堡，
+			</p>
+			<p>
+				加上一杯喷香浓郁的奶茶，再加上一个健康的蜜桃派
+			</p>
+			<p>
+				我最亲爱的姐，早安。
+			</p>
+		</center>
+	</div>
+	<div class="box">
+		<div class="to_top">
+		</div>
+	</div>
+	<div class="Wei_img">
+		<center>
+			<img src="Wei.png" alt="" width="290px">
+		</center>
+	</div>
+	<div class="Wei_content">
+		<center>
+			<p>
+				精打细算，抠门到家
+			</p>
+			<p>
+				莫名其妙的正义感
+			</p>
+			<p style="color: gold">
+				你也可以叫我张益达
+			</p>
+			<p>
+				善良到无可救药
+			</p>
+			<p>
+				机会像雨水般向他打来，但他都一一闪过了
+			</p>
+			<p>
+				却总是那么乐观，那么积极向上
+			</p>
+			<p>
+				摸爬滚打，一路从见习到挂牌再到正式律师
+			</p>
+		</center>
+	</div>
+</div>
+</body>
+</html>
